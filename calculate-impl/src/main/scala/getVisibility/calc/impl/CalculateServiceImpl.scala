@@ -112,6 +112,7 @@ def scan = ServiceCall { _ =>
 
   var x=0
   var deadline = 5.seconds.fromNow
+
   while (x<=5  ) {
     if ( ! deadline.hasTimeLeft()){
    // actor ! PutMessage("my message number "+x)
