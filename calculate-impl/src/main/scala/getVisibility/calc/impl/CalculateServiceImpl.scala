@@ -116,7 +116,7 @@ def scan = ServiceCall { _ =>
   while (x<=5  ) {
     if ( ! deadline.hasTimeLeft()){
    // actor ! PutMessage("my message number "+x)
-      actor ! ("This is my message number  is "+x)
+      actor ! ("This is my message number "+x)
       x=x+1
       deadline = 3.seconds.fromNow
     }
